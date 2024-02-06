@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .hover_effect {
+    @apply hover:shadow-md hover:shadow-blue-500 cursor-pointer duration-700;
+  }
+  .btn {
+    @apply text-white bg-Blue border-0 text-center py-3 px-8 focus:outline-none hover:bg-blue-700 rounded-full text-lg duration-300;
+  }
+  .hover_zoom {
+    @apply hover:scale-105 ease-in duration-300 cursor-pointer;
+  }
+}
